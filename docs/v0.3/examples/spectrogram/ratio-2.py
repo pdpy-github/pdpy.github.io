@@ -1,1 +1,0 @@
-medratio = specgram.ratio('median')

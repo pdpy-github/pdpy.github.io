@@ -1,1 +1,0 @@
-events.add_column(events["mass1"] + events["mass2"], name="mtotal")
