@@ -41,7 +41,16 @@
         <div class="col-md-12">
           <h2>Useful links</h2>
           <div class="col-md-6">
-            <a href="https://pyDischarge.github.io/docs/stable/install/" target="_blank" title="Installation"><button type="button" class="btn btn-success docs">Installation</button></a>
+            <a id="installation" href="#" target="_blank" title="Installation"><button type="button" class="btn btn-success docs">Installation</button></a>
+            <script>
+              fetch('versions.json')
+                .then(response => response.json())
+                .then(data => {
+                  const stableVersion = data.find(item => item.aliases.includes('stable')).version;
+                  const installationLink = document.getElementById('installation');
+                  installationLink.href = `https://pyDischarge.github.io/docs/${stableVersion}/install/`;
+                });
+            </script>
           </div>
           <div class="col-md-6">
             <a href="https://github.com/pyDischarge/pydischarge/issues/" target="_blank" title="Report an issue"><button type="button" class="btn btn-danger docs">Report an issue</button></a>
