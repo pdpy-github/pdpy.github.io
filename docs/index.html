@@ -19,7 +19,16 @@
       <div class="doclinks">
         <div class="row">
           <div class="col-md-6">
-            <a href="0.0.1/" title="pyDischarge docs (latest release)"><button type="button" class="btn btn-default btn-success docs" id="stable">0.0.1</button></a>
+            <a id="stable" href="#" target="_blank" title="pyDischarge docs (latest release)"><button type="button" class="btn btn-default btn-success docs">Stable</button></a>
+            <script>
+              fetch('versions.json')
+                .then(response => response.json())
+                .then(data => {
+                  const stableVersion = data.find(item => item.aliases.includes('stable')).version;
+                  const stableLink = document.getElementById('stable');
+                  stablenLink.href = stableLink.href = `${stableVersion}/`;
+                });
+            </script>
           </div>
           <div class="col-md-6">
             <a href="0.0.1/" title="pyDischarge development docs (HEAD)"><button type="button" class="btn btn-default btn-danger docs" id="latest">0.0.1</button></a>
