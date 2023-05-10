@@ -43,12 +43,12 @@
           <div class="col-md-6">
             <a id="installation" href="#" target="_blank" title="Installation"><button type="button" class="btn btn-success docs">Installation</button></a>
             <script>
-              fetch('versions.json')
+              fetch('docs/versions.json')
                 .then(response => response.json())
                 .then(data => {
                   const stableVersion = data.find(item => item.aliases.includes('stable')).version;
                   const installationLink = document.getElementById('installation');
-                  installationLink.href = `https://pyDischarge.github.io/docs/${stableVersion}/install/`;
+                  installationLink.href = installationLink.href = `https://pyDischarge.github.io/docs/${stableVersion}/install/`;
                 });
             </script>
           </div>
