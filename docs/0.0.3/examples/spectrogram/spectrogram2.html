@@ -951,7 +951,7 @@ data, but give poor resolution when studying short-duration phenomena.</p>
 calculations to over-sample the frequency content of the input <a class="reference internal" href="../../api/pydischarge.timeseries.TimeSeries.html#pydischarge.timeseries.TimeSeries" title="pydischarge.timeseries.TimeSeries (Python class) — A time-domain data array."><code class="xref py py-obj docutils literal notranslate"><span class="pre">TimeSeries</span></code></a>
 to produce a much more feature-rich output.</p>
 <p>To demonstrate this, we can download some data associated with the
-gravitational-wave event GW510914:</p>
+partial discharge event GW510914:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pydischarge.timeseries</span> <span class="kn">import</span> <span class="n">TimeSeries</span>
 <span class="n">lho</span> <span class="o">=</span> <span class="n">TimeSeries</span><span class="o">.</span><span class="n">fetch_open_data</span><span class="p">(</span><span class="s1">&#39;H1&#39;</span><span class="p">,</span> <span class="mi">1126259458</span><span class="p">,</span> <span class="mi">1126259467</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>

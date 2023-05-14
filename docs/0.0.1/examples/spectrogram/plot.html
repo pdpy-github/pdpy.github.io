@@ -944,7 +944,7 @@
   </a>
 
 <h1 id="plotting-a-spectrogram"><span id="pydischarge-example-spectrogram-plot"></span><span class="section-number">1. </span>Plotting a <code class="xref py py-obj docutils literal notranslate"><span class="pre">Spectrogram</span></code><a class="headerlink" href="#plotting-a-spectrogram" title="Permalink to this headline">¶</a></h1>
-<p>One of the most useful methods of visualising gravitational-wave data is to
+<p>One of the most useful methods of visualising partial discharge data is to
 use a spectrogram, highlighting the frequency-domain content of some data
 over a number of time steps.</p>
 <p>For this example we can use the public data around the GW150914 detection.</p>
@@ -975,12 +975,12 @@ to convert this into a (more familiar) Amplitude Spectral Density.</p>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">2000</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span>
-    <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;Gravitational-wave amplitude [strain/$\sqrt{\mathrm</span><span class="si">{Hz}</span><span class="s1">}$]&#39;</span><span class="p">)</span>
+    <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;Partial discharge amplitude [strain/$\sqrt{\mathrm</span><span class="si">{Hz}</span><span class="s1">}$]&#39;</span><span class="p">)</span>
 <span class="n">plot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 </div>
 <p>This shows the relative stability of the interferometer sensitivity over
-the ten-minute span. Despite there being a gravitational-wave signal in the
+the ten-minute span. Despite there being a partial discharge signal in the
 data, the resolution (and dynamic range) of the spectrogram make it
 impossible to see. The <a class="reference internal" href="ratio.html#pydischarge-example-spectrogram-ratio"><span class="std std-ref">next example</span></a>
 shows you how to normalise a <a class="reference internal" href="../../api/pydischarge.spectrogram.Spectrogram.html#pydischarge.spectrogram.Spectrogram" title="pydischarge.spectrogram.Spectrogram (Python class) — A 2D array holding a spectrogram of time-frequency data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Spectrogram</span></code></a> to better

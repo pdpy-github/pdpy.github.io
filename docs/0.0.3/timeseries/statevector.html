@@ -1097,7 +1097,7 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pydischarge.timeseries</span> <span class="kn">import</span> <span class="p">(</span><span class="n">StateTimeSeries</span><span class="p">,</span> <span class="n">StateVector</span><span class="p">)</span>
 </code></pre></div>
 </div>
-<p>A large quantity of important data from gravitational-wave detectors
+<p>A large quantity of important data from partial discharge detectors
 can be distilled into simple boolean (<a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>) statements
 informing something about the state of the instrument at a given time.
 These statements can be used to identify times during which a particular
@@ -1122,7 +1122,7 @@ the <a class="reference internal" href="../api/pydischarge.timeseries.TimeSeries
 <h2 id="the-statetimeseries">The <a class="reference internal" href="../api/pydischarge.timeseries.StateTimeSeries.html#pydischarge.timeseries.StateTimeSeries" title="pydischarge.timeseries.StateTimeSeries (Python class) — Boolean array representing a good/bad state determination"><code class="xref py py-class docutils literal notranslate"><span class="pre">StateTimeSeries</span></code></a><a class="headerlink" href="#the-statetimeseries" title="Permalink to this headline">¶</a></h2>
 <p>The example of a threshold on signal time-series is the core of a large
 amount of low-level data quality information, used in searches for
-gravitational waves, and detector characterisation, and is described by the
+partial discharges, and detector characterisation, and is described by the
 <a class="reference internal" href="../api/pydischarge.timeseries.StateTimeSeries.html#pydischarge.timeseries.StateTimeSeries" title="pydischarge.timeseries.StateTimeSeries (Python class) — Boolean array representing a good/bad state determination"><code class="xref py py-class docutils literal notranslate"><span class="pre">StateTimeSeries</span></code></a> object, a specific type of <a class="reference internal" href="../api/pydischarge.timeseries.TimeSeries.html#pydischarge.timeseries.TimeSeries" title="pydischarge.timeseries.TimeSeries (Python class) — A time-domain data array."><code class="xref py py-class docutils literal notranslate"><span class="pre">TimeSeries</span></code></a>
 containing only boolean values.</p>
 <p>These arrays can be generated from simple arrays of booleans, as follows:</p>
