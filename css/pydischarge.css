@@ -146,23 +146,6 @@ button {
   border-color: #000;
 }
 
-#latest:after {
-  position: absolute;
-  right: 20px;
-  float: right;
-  font-size: smaller;
-  content: "(unstable)";
-}
-
-#stable:after {
-  position: absolute;
-  right: 20px;
-  float: right;
-  font-size: smaller;
-  content: "(stable)";
-}
-
-
 .doclinks {
   padding-top: 20px;
 }
