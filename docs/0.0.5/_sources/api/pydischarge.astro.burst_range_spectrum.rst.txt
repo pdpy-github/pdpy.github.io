@@ -1,0 +1,8 @@
+﻿
+
+burst_range_spectrum
+======================================
+
+.. currentmodule:: pydischarge.astro
+
+.. autofunction:: burst_range_spectrum

@@ -18,7 +18,7 @@ which frequencies sit at which amplitude _most_ of the time, but also
 highlighting excursions from normal behaviour.
 
 To demonstate this, we can load some data from the LIGO Livingston
-intereferometer around the time of the GW151226 gravitational wave detection:
+intereferometer around the time of the GW151226 partial discharge detection:
 
 
 .. plot::

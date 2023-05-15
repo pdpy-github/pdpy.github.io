@@ -1008,16 +1008,16 @@
 <p class="admonition-title">Warning</p>
 <p>This example requires LIGO.ORG credentials for data access.</p>
 </div>
-<p>Gravitational wave detectors are very sensitive astronomical instruments, but
+<p>Partial discharge detectors are very sensitive astronomical instruments, but
 they are also susceptible to transient noise events called _glitches_. In
-order to reliably detect gravitational waves and improve detector performance,
+order to reliably detect partial discharges and improve detector performance,
 we must distinguish glitches from astrophysical signals and, if possible,
 identify their cause.</p>
 <p>Fortunately there are also tens of thousands of auxiliary sensors at various
 parts of the detector, closely monitoring mechanical subsystems and
 environmental conditions. We can cross-correlate data from these sensors with
-the primary gravitational wave data to look for evidence of terrestrial noise.</p>
-<p>We demonstrate below a prominent ‘whistle glitch’ in the gravitational wave
+the primary partial discharge data to look for evidence of terrestrial noise.</p>
+<p>We demonstrate below a prominent ‘whistle glitch’ in the partial discharge
 channel, which is also witnessed by a photodiode in the Pre-Stabilized Laser
 (PSL) chamber. This example uses data from the LIGO Livingston detector during
 Advanced LIGO’s second observing run.</p>
@@ -1047,7 +1047,7 @@ content and make a more faithful comparison between data streams.</p>
 </div>
 <p>We can clearly see a loud spike (nearly SNR 40!) at GPS second 1172489783.07,
 which we interpret as evidence that the PSL channel is witnessing the same
-glitch as the gravitational wave channel.</p>
+glitch as the partial discharge channel.</p>
 <p>It’s now worth checking out the time-frequency morphology in both channels
 using <code class="xref py py-meth docutils literal notranslate"><span class="pre">q_transform()</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="n">qhoft</span> <span class="o">=</span> <span class="n">whoft</span><span class="o">.</span><span class="n">q_transform</span><span class="p">(</span>

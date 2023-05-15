@@ -1,0 +1,8 @@
+﻿
+
+inspiral_range
+================================
+
+.. currentmodule:: pydischarge.astro
+
+.. autofunction:: inspiral_range

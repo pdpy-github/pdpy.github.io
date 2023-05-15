@@ -1004,12 +1004,12 @@
   </a>
 
 <h1 id="accessing-and-visualising-public-gw-detector-data"><span id="pydischarge-example-timeseries-public"></span><span class="section-number">1. </span>Accessing and visualising public GW detector data<a class="headerlink" href="#accessing-and-visualising-public-gw-detector-data" title="Permalink to this headline">¶</a></h1>
-<p>Data from the current generation gravitational wave detectors are published
-by The Gravitational-Wave Open Science Centre (GWOSC) and freely available to the public.
+<p>Data from the current generation partial discharge detectors are published
+by The Partial Discharges Open Science Centre (GWOSC) and freely available to the public.
 In this example we demonstrate how to identify times of a published
 GW detection event, and to download and visualise detector data.</p>
 <p>Firstly, we can use the <code class="xref py py-obj docutils literal notranslate"><span class="pre">gwosc</span></code> Python package to query for the
-time of the first gravitational-wave detection GW150914:</p>
+time of the first partial discharge detection GW150914:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">gwosc.datasets</span> <span class="kn">import</span> <span class="n">event_gps</span>
 <span class="n">gps</span> <span class="o">=</span> <span class="n">event_gps</span><span class="p">(</span><span class="s2">&quot;GW150914&quot;</span><span class="p">)</span>
 </code></pre></div>
@@ -1037,10 +1037,10 @@ for GW150914):</p>
 <span class="n">plot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 </div>
-<p>We can’t see anything that looks like a gravitational wave signal in these
+<p>We can’t see anything that looks like a partial discharge signal in these
 data, the amplitude is dominated by low-frequency detector noise.
 Further filtering is required to be able to identify the GW150914 event
-here, see <a class="reference internal" href="../signal/gw150914.html#pydischarge-example-signal-gw150914"><span class="std std-ref">Filtering a TimeSeries to detect gravitational waves</span></a> for a more in-depth example of
+here, see <a class="reference internal" href="../signal/gw150914.html#pydischarge-example-signal-gw150914"><span class="std std-ref">Filtering a TimeSeries to detect partial discharges</span></a> for a more in-depth example of
 extracting signals from noise.</p>
 
 

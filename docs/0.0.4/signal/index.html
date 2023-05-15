@@ -1282,7 +1282,7 @@ Available methods include:</p>
 </tbody>
 </table>
 <p>Each of the above methods eventually calls out to <code class="xref py py-meth docutils literal notranslate"><span class="pre">TimeSeries.filter()</span></code> to apply a digital linear filter, normally via cascaded second-order-sections (requires <code class="xref py py-obj docutils literal notranslate"><span class="pre">scipy</span> <span class="pre">&gt;=</span> <span class="pre">0.16</span></code>).</p>
-<p>For a worked example of how to filter LIGO data to discover a gravitational-wave signal, see the example <a class="reference internal" href="../examples/signal/gw150914.html#pydischarge-example-signal-gw150914"><span class="std std-ref">Filtering a TimeSeries to detect gravitational waves</span></a>.</p>
+<p>For a worked example of how to filter LIGO data to discover a partial discharge signal, see the example <a class="reference internal" href="../examples/signal/gw150914.html#pydischarge-example-signal-gw150914"><span class="std std-ref">Filtering a TimeSeries to detect partial discharges</span></a>.</p>
 <h2 id="frequency-domain-filtering">Frequency-domain filtering<a class="headerlink" href="#frequency-domain-filtering" title="Permalink to this headline">¶</a></h2>
 <p>Additionally, the <a class="reference internal" href="../api/pydischarge.timeseries.TimeSeries.html#pydischarge.timeseries.TimeSeries" title="pydischarge.timeseries.TimeSeries (Python class) — A time-domain data array."><code class="xref py py-obj docutils literal notranslate"><span class="pre">TimeSeries</span></code></a> object includes a number of instance methods to generate frequency-domain information for some data.
 Available methods include:</p>
@@ -1321,7 +1321,7 @@ Available methods include:</p>
 </tbody>
 </table>
 <p>Each of these will return filter coefficients that can be passed directly into <code class="xref py py-obj docutils literal notranslate"><span class="pre">zpk</span></code> (default for analogue filters) or <code class="xref py py-obj docutils literal notranslate"><span class="pre">filter</span></code> (default for digital filters).</p>
-<p>For a worked example of how to filter LIGO data to discover a gravitational-wave signal, see the example <a class="reference internal" href="../examples/signal/gw150914.html#pydischarge-example-signal-gw150914"><span class="std std-ref">Filtering a TimeSeries to detect gravitational waves</span></a>.</p>
+<p>For a worked example of how to filter LIGO data to discover a partial discharge signal, see the example <a class="reference internal" href="../examples/signal/gw150914.html#pydischarge-example-signal-gw150914"><span class="std std-ref">Filtering a TimeSeries to detect partial discharges</span></a>.</p>
 <p><strong>Cross-channel correlations:</strong></p>
 <table class="autosummary longtable docutils data align-default">
 <colgroup>
